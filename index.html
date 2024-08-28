@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header__logo__alura">
+        <img class="imagen__logo__alura" src="./img/Logo.png" alt="Logo">
+    </header>
+    <main class="main-container">
+        <section class="sidebar">
+            <img class="mono__desencriptado" src="./img/Muñeco.png" alt="Mono en area texto desencriptado">
+            <h1 class="texto__error">Ningún mensaje fue encontrado</h1>
+            <div class="contenedor__copiar">
+                <p id="Parrafo"></p>
+                <button class="btn__copiar" onclick="copiar()">Copiar</button>
+                
+            </div>
+        </section>
+        <div class="content">
+            <textarea class="contenedor__area__texto" id="Areatexto" placeholder="Escribe algo aquí..."></textarea>
+            <div class="button-group">
+                <button class="btn__encriptar" id="botonEcrip1" onclick="encriptar()">Encriptar</button>
+                <button class="btn__desencriptar" id="botonDes1" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer__personal">
+        <p>Desarrollado por: Hector Esteban Ramirez Franco desafio ALURA</p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
